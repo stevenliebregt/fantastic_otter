@@ -13,11 +13,9 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
-        with:
-          path: fantastic_otter
 
       - name: List folder
-        run: ls -la fantastic_otter
+        run: ls -la .
 
       - name: Publish package distributions to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
