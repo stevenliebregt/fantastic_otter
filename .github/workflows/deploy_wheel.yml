@@ -4,7 +4,7 @@ on:
 jobs:
   pypi-publish:
     name: Upload release to PyPI
-    runs-on: [Linux]
+    runs-on: ubuntu-latest
     environment:
       name: pypi
       url: https://pypi.org/p/fantastic_otter
