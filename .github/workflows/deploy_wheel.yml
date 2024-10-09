@@ -1,4 +1,6 @@
 name: '[Call/Dispatch] Wheel Deployment'
+on:
+  workflow_dispatch
 jobs:
   pypi-publish:
     name: Upload release to PyPI
