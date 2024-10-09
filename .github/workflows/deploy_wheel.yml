@@ -19,4 +19,4 @@ jobs:
         with:
           skip-existing: true
           verbose: true
-          packages-dir: wheel
+          packages-dir: fantastic_otter/wheel
