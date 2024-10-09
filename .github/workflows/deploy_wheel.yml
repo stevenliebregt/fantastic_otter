@@ -14,12 +14,9 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: List folder
-        run: ls -la .
-
       - name: Publish package distributions to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
           skip-existing: true
           verbose: true
-          packages-dir: fantastic_otter/wheel
+          packages-dir: wheel
