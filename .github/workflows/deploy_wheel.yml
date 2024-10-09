@@ -19,4 +19,4 @@ jobs:
         with:
           skip-existing: true
           verbose: true
-          packages-dir: fantastic_otter/wheel
+          packages-dir: /home/runner/work/fantastic_otter/fantastic_otter/wheel
