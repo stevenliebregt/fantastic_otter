@@ -13,10 +13,17 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+        with:
+          path: fantastic_otter
+
+      - name: List folder
+        uses: philips-labs/list-folders-action@v1
+        with:
+          path: fantastic_otter
 
       - name: Publish package distributions to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
           skip-existing: true
           verbose: true
-          packages-dir: /home/runner/work/fantastic_otter/fantastic_otter/wheel
+          packages-dir: fantastic_otter/wheel
